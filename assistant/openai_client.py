@@ -7,8 +7,8 @@ def consultar_openai(texto_usuario):
     try:
         respuesta = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": texto_usuario}]
+            messages=[{"role": "user", "content": texto_usuario}],
         )
         return respuesta.choices[0].message.content.strip()
     except Exception as e:
-        return f"No se pudo obtener respuesta de OpenAI: {e}"
+        return f"Lo siento, hubo un error al consultar la IA: {e}"
