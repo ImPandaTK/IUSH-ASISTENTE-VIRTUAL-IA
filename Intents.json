@@ -1,0 +1,45 @@
+{
+    "intents": [
+      {
+        "tag": "saludo",
+        "patterns": ["hola", "buenos días", "qué tal", "buenas tardes", "buenas noches", "hey","Cómo vamos?", "¿Cómo estás?", "¿Qué hay?", "¿Qué tal?", "¿Qué pasa?", "¿Cómo va todo?", "¿Cómo te va?", "¿Qué cuentas?", "¿Qué novedades hay?", "¿Cómo andas?", "¿Cómo te encuentras?", "¿Qué hay de nuevo?", "¿Cómo va la vida?", "¿Qué tal va todo?"],
+        "responses": ["¡Hola!", "¡Hola! ¿Cómo estás?", "¡Hola! ¿En qué puedo ayudarte?"]
+      },
+      {
+        "tag": "hora",
+        "patterns": ["qué hora es", "dime la hora", "hora actual", "hora", "¿Qué hora tienes?", "¿Qué hora es ahora?", "¿Me puedes decir la hora?", "¿Cuál es la hora actual?", "¿Qué hora marca tu reloj?", "¿Qué hora es en este momento?", "¿Tienes la hora?", "¿Sabes qué hora es?", "¿Puedes decirme la hora?", "¿Cuál es la hora ahora?", "¿Qué hora es en este instante?", "¿Qué hora tienes ahora?"],
+        "responses": ["Son las {hora_actual}."]
+      },
+        {
+            "tag": "despedida",
+            "patterns": ["Fuisioso","La buena mi So","Por la sombrita","La buena Pa'","chao"],
+            "responses": ["la buena mi so", "¡Cuídate!", "Fuisioso por la sombrita", "¡Hasta luego!", "¡Adiós!", "Compañe"]
+        },
+        {
+            "tag": "gracias",
+            "patterns": ["gracias", "muchas gracias", "te lo agradezco"],
+            "responses": ["¡De nada!", "¡Siempre a tu servicio!"]
+        },
+        {
+            "tag": "nombre",
+            "patterns": ["cuál es tu nombre", "cómo te llamas", "tu nombre"],
+            "responses": ["Soy un bot de IA, no tengo un nombre propio."]
+        },
+        {
+            "tag": "ayuda",
+            "patterns": ["ayuda", "necesito ayuda", "puedes ayudarme"],
+            "responses": ["Claro, ¿en qué puedo ayudarte?", "Estoy aquí para ayudarte."]
+        },
+        {
+            "tag": "clima",
+            "patterns": ["cómo está el clima", "qué tiempo hace", "clima actual"],
+            "responses": ["Lo siento, no tengo acceso a información del clima en este momento."]
+        },
+        {
+            "tag": "chiste",
+            "patterns": ["cuéntame un chiste", "hazme reír", "chiste"],
+            "responses": ["¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter."]
+        }
+    ]
+  }
+  
