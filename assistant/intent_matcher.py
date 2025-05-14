@@ -1,8 +1,8 @@
 from fuzzywuzzy import fuzz
 
-def obtener_intencion(texto_usuario, intents):
+def obtener_intencion(texto_usuario, intents, umbral=60):
     mejor_score = 0
-    mejor_intencion = "desconocido"
+    mejor_intencion = None
 
     for intent in intents["intents"]:
         for patron in intent["patterns"]:
@@ -11,4 +11,4 @@ def obtener_intencion(texto_usuario, intents):
                 mejor_score = score
                 mejor_intencion = intent["tag"]
     
-    return mejor_intencion
+    return mejor_intencion if mejor_score >= umbral else None
