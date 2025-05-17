@@ -32,8 +32,8 @@
         },
         {
             "tag": "clima",
-            "patterns": ["cómo está el clima", "qué tiempo hace", "clima actual"],
-            "responses": ["Lo siento, no tengo acceso a información del clima en este momento."]
+            "patterns": ["¿Qué clima hace?","¿Cómo está el clima?","¿Va a llover hoy?","Dime el clima en Medellín"],
+           "responses": ["Por favor dime la ciudad para consultar el clima."]
         },
         {
             "tag": "chiste",

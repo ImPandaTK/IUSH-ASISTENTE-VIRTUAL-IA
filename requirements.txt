@@ -3,3 +3,4 @@ pyttsx3
 fuzzywuzzy
 python-dotenv
 openai
+spotipy
