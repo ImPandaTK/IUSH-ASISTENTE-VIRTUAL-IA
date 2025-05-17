@@ -4,3 +4,4 @@ __pycache__/
 Credenciales.zip
 Spotify Key.txt
 venv/
+.venv/

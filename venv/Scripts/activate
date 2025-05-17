@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\iambr\OneDrive\Desktop\Asistente virtual\IUSH-ASISTENTE-VIRTUAL-IA\venv"
+VIRTUAL_ENV="C:\Users\bypan\OneDrive\Documentos\Asistente Virtual\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
