@@ -1,0 +1,173 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenas",
+        "qué más",
+        "qué hay",
+        "cómo vamos",
+        "hey parce",
+        "quiubo",
+        "saludos",
+        "qué tal",
+        "buenos días",
+        "buenas tardes",
+        "buenas noches",
+        "hola qué tal",
+        "cómo estás",
+        "hola mi llave"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte?",
+        "Hola, dime qué necesitas",
+        "¡Saludos parcero!"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "chao",
+        "nos pillamos",
+        "hasta luego",
+        "me fui",
+        "nos vemos",
+        "cuídate",
+        "fui",
+        "la buena mi so",
+        "nos vidrios",
+        "hasta la próxima"
+      ],
+      "responses": [
+        "¡Hasta luego!",
+        "Cuídate mucho",
+        "La buena mi so",
+        "Nos vemos pronto"
+      ]
+    },
+    {
+      "tag": "musica",
+      "patterns": [
+        "pon una canción",
+        "reproduce música",
+        "quiero escuchar reggaetón",
+        "pon música de Karol G",
+        "reproduce a Shakira",
+        "suéltate algo bueno",
+        "quiero oír un vallenato",
+        "pon salsa",
+        "pon algo de Bad Bunny",
+        "quiero algo de rock colombiano"
+      ],
+      "responses": [
+        "¿Qué artista o género quieres escuchar?",
+        "Dime una canción o estilo musical"
+      ]
+    },
+    {
+      "tag": "clima",
+      "patterns": [
+        "cómo está el clima",
+        "va a llover hoy",
+        "clima en Medellín",
+        "qué temperatura hace",
+        "está haciendo calor en Bogotá",
+        "cómo está el tiempo",
+        "qué tal el clima en Cali",
+        "llueve en Cartagena"
+      ],
+      "responses": [
+        "¿En qué ciudad quieres saber el clima?",
+        "Dime la ciudad para darte el clima."
+      ]
+    },
+    {
+      "tag": "chiste",
+      "patterns": [
+        "cuéntame un chiste",
+        "hazme reír",
+        "dime algo chistoso",
+        "tírate un chiste",
+        "échate una",
+        "un chistecito",
+        "suelta el chiste"
+      ],
+      "responses": [
+        "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter."
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": [
+        "gracias",
+        "mil gracias",
+        "te lo agradezco",
+        "gracias parcero",
+        "se le agradece",
+        "muchas gracias",
+        "gracias mi llave"
+      ],
+      "responses": [
+        "¡De nada!",
+        "¡Siempre a tu servicio!"
+      ]
+    },
+    {
+      "tag": "nombre",
+      "patterns": [
+        "cómo te llamas",
+        "cuál es tu nombre",
+        "cómo es tu nombre",
+        "tienes nombre",
+        "quién eres"
+      ],
+      "responses": [
+        "Soy tu asistente virtual, un parcero digital."
+      ]
+    },
+    {
+      "tag": "ayuda",
+      "patterns": [
+        "ayuda",
+        "necesito ayuda",
+        "colabórame",
+        "me puedes colaborar",
+        "necesito una mano",
+        "puedes ayudarme",
+        "una ayudita porfa"
+      ],
+      "responses": [
+        "Claro que sí, ¿con qué necesitas ayuda?",
+        "Estoy aquí pa' lo que necesites."
+      ]
+    },
+    {
+      "tag": "traduccion",
+      "patterns": [
+        "cómo se dice en inglés",
+        "traduce esto",
+        "tradúceme esta frase",
+        "dímelo en inglés",
+        "traduce esto al francés",
+        "pásalo al inglés"
+      ],
+      "responses": [
+        "¿Qué frase quieres traducir y a qué idioma?"
+      ]
+    },
+    {
+      "tag": "cita",
+      "patterns": [
+        "dame una frase inspiradora",
+        "una cita motivadora",
+        "una frase que anime",
+        "tírame una cita",
+        "algo motivante"
+      ],
+      "responses": [
+        "No sueñes tu vida, vive tu sueño. - Anónimo"
+      ]
+    }
+  ]
+}

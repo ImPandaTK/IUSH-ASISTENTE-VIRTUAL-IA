@@ -1,0 +1,250 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenas",
+        "qué tal",
+        "buenos días",
+        "cómo estás",
+        "hey",
+        "hello"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte?",
+        "Hola, dime qué necesitas",
+        "¡Saludos!"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "chao",
+        "adiós",
+        "hasta luego",
+        "nos vemos",
+        "me voy",
+        "bye"
+      ],
+      "responses": [
+        "¡Hasta luego!",
+        "Cuídate",
+        "Chao, compa",
+        "Nos vemos pronto"
+      ]
+    },
+    {
+      "tag": "musica",
+      "patterns": [
+        "pon una canción",
+        "reproduce música",
+        "pon algo de Bad Bunny",
+        "quiero escuchar a Shakira",
+        "pon música relajante"
+      ],
+      "responses": [
+        "¿Qué artista o canción te gustaría escuchar?",
+        "Dime un artista o estilo de música"
+      ]
+    },
+    {
+      "tag": "clima",
+      "patterns": [
+        "qué clima hace",
+        "cómo está el clima",
+        "clima actual",
+        "va a llover hoy",
+        "hace calor"
+      ],
+      "responses": [
+        "Puedo ayudarte con eso. ¿En qué ciudad estás?",
+        "¿Dónde quieres saber el clima?"
+      ]
+    },
+    {
+      "tag": "chiste",
+      "patterns": [
+        "cuéntame un chiste",
+        "hazme reír",
+        "chiste",
+        "dime algo gracioso"
+      ],
+      "responses": [
+        "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter."
+      ]
+    },
+    {
+      "tag": "cita",
+      "patterns": [
+        "dime una frase motivadora",
+        "dame una cita inspiradora",
+        "alguna frase positiva"
+      ],
+      "responses": [
+        "La vida es lo que pasa mientras estás ocupado haciendo otros planes. - John Lennon"
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": [
+        "gracias",
+        "muchas gracias",
+        "te lo agradezco"
+      ],
+      "responses": [
+        "¡De nada!",
+        "¡Siempre a tu servicio!"
+      ]
+    },
+    {
+      "tag": "ayuda",
+      "patterns": [
+        "necesito ayuda",
+        "puedes ayudarme",
+        "ayuda",
+        "cómo funciona esto"
+      ],
+      "responses": [
+        "Claro, dime qué necesitas",
+        "Estoy aquí para ayudarte"
+      ]
+    },
+    {
+      "tag": "nombre",
+      "patterns": [
+        "cómo te llamas",
+        "cuál es tu nombre",
+        "tienes nombre"
+      ],
+      "responses": [
+        "Soy tu asistente virtual, creado para ayudarte."
+      ]
+    },
+    {
+      "tag": "idioma",
+      "patterns": [
+        "quiero aprender un idioma",
+        "recomiéndame un idioma",
+        "qué idioma puedo estudiar"
+      ],
+      "responses": [
+        "¿Qué tipo de idiomas te interesan? Puedo darte opciones."
+      ]
+    },
+    {
+      "tag": "traduccion",
+      "patterns": [
+        "tradúceme esto",
+        "cómo se dice en inglés",
+        "traduce al francés"
+      ],
+      "responses": [
+        "¿Qué frase quieres traducir y a qué idioma?"
+      ]
+    },
+    {
+      "tag": "comida",
+      "patterns": [
+        "qué puedo comer hoy",
+        "recomiéndame una comida",
+        "tengo hambre"
+      ],
+      "responses": [
+        "¿Te gustaría algo salado o dulce?",
+        "¿Comida rápida o casera?"
+      ]
+    },
+    {
+      "tag": "juego",
+      "patterns": [
+        "quiero jugar algo",
+        "recomiéndame un juego",
+        "qué juego me sugieres"
+      ],
+      "responses": [
+        "¿Te gustan los juegos de mesa, móviles o PC?"
+      ]
+    },
+    {
+      "tag": "programacion",
+      "patterns": [
+        "dame un consejo de programación",
+        "qué lenguaje me recomiendas",
+        "cómo empezar a programar"
+      ],
+      "responses": [
+        "Empieza con Python, es claro y muy útil para aprender."
+      ]
+    },
+    {
+      "tag": "motivacion",
+      "patterns": [
+        "necesito motivación",
+        "estoy desanimado",
+        "anímame"
+      ],
+      "responses": [
+        "¡Tú puedes con esto y mucho más!",
+        "Recuerda: todo esfuerzo vale la pena."
+      ]
+    },
+    {
+      "tag": "noticia",
+      "patterns": [
+        "qué hay en las noticias",
+        "cuáles son los titulares",
+        "dime algo actual"
+      ],
+      "responses": [
+        "Dame un tema o país para buscar noticias relevantes."
+      ]
+    },
+    {
+      "tag": "wikipedia",
+      "patterns": [
+        "quién es Elon Musk",
+        "qué es la relatividad",
+        "explícame la inteligencia artificial"
+      ],
+      "responses": [
+        "Voy a buscar esa información para ti."
+      ]
+    },
+    {
+      "tag": "operacion",
+      "patterns": [
+        "cuánto es 5 más 3",
+        "resuelve 12 dividido entre 4",
+        "cuánto es 8x6"
+      ],
+      "responses": [
+        "Déjame calcularlo..."
+      ]
+    },
+    {
+      "tag": "resumen",
+      "patterns": [
+        "resúmeme este texto",
+        "quiero un resumen",
+        "hazme un resumen de esto"
+      ],
+      "responses": [
+        "Pásame el texto que quieres resumir."
+      ]
+    },
+    {
+      "tag": "error",
+      "patterns": [
+        "asdjkl",
+        "qwerty",
+        "no sé qué decir",
+        "lalala",
+        "xd xd xd"
+      ],
+      "responses": [
+        "No entendí eso. ¿Puedes repetirlo?"
+      ]
+    }
+  ]
+}
