@@ -12,7 +12,7 @@
       },
         {
             "tag": "despedida",
-            "patterns": ["Fuisioso","La buena mi So","Por la sombrita","La buena Pa'","chao"],
+            "patterns": ["Fuisioso","La buena mi So","Por la sombrita","La buena Pa'","chao", "adios"],
             "responses": ["la buena mi so", "¡Cuídate!", "Fuisioso por la sombrita", "¡Hasta luego!", "¡Adiós!", "Compañe"]
         },
         {
@@ -39,6 +39,41 @@
             "tag": "chiste",
             "patterns": ["cuéntame un chiste", "hazme reír", "chiste"],
             "responses": ["¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter."]
+        },
+        {
+            "tag": "musica",
+            "patterns": [ "pon música","búscame una canción","pon algo para escuchar","quiero escuchar algo","pon música de Bad Bunny","reproduce una canción","quiero oír algo de Shakira","pon algo de","reproduce música de","quiero escuchar música","pon una canción de","reproduce a"],
+            "responses": ["¿Qué canción o artista quieres escuchar?"]
+        },
+        {
+            "tag": "cancion_actual",
+            "patterns": [ "qué está sonando","qué canción está puesta","qué canción suena","qué suena ahora","qué está reproduciendo"],
+            "responses": ["Revisando lo que suena ahora..."]
+        },
+        {
+            "tag": "comida",
+            "patterns": ["recomiéndame un plato", "qué comida me sugieres", "quiero comer algo"],
+            "responses": ["¿Qué tipo de comida prefieres?"]
+        },
+        {
+            "tag": "juego",
+            "patterns": ["quiero jugar", "recomiéndame un juego", "qué juego me sugieres"],
+            "responses": ["¿Qué tipo de juego te gusta?"]
+        },
+        {
+            "tag": "programacion",
+            "patterns": ["dame un consejo de programación", "recomiéndame un libro de programación", "qué lenguaje de programación me sugieres"],
+            "responses": ["¿Qué tipo de programación te interesa?"]
+        },
+        {
+            "tag": "idioma",
+            "patterns": ["quiero aprender un idioma", "recomiéndame un idioma", "qué idioma me sugieres"],
+            "responses": ["¿Qué idioma te gustaría aprender?"]
+        },
+        {
+            "tag": "cita",
+            "patterns": ["dame una cita inspiradora", "recomiéndame una frase", "qué frase me sugieres"],
+            "responses": ["La vida es lo que pasa mientras estás ocupado haciendo otros planes. - John Lennon"]
         }
     ]
   }
