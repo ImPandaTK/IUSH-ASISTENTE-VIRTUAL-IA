@@ -4,18 +4,46 @@ from assistant.recognizer import escuchar
 from assistant.responder import responder
 from assistant.intent_matcher import obtener_intencion
 from assistant.voice_output import hablar
+from assistant.weather import obtener_clima
 from config.settings import CARGAR_INTENTS
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 intents = CARGAR_INTENTS()
 
-# --- Función principal ---
+esperando_artista = False
+esperando_ciudad = False
+
+ventana = tk.Tk()  #
+
+entrada_usuario = tk.StringVar()
+salida_asistente = tk.StringVar()
+
 def ejecutar_asistente():
+    global esperando_artista, esperando_ciudad
     texto = escuchar()
-    
+
     if texto:
         entrada_usuario.set(f"🗣️ Tú: {texto}")
-        intencion = obtener_intencion(texto, intents)
-        respuesta = responder(intencion, texto, intents)
+        if esperando_artista:
+            respuesta, tipo = responder("musica", texto, intents)
+            esperando_artista = False
+        elif esperando_ciudad:
+            ciudad = texto
+            respuesta = obtener_clima(ciudad)
+            tipo = "clima"
+            esperando_ciudad = False
+        else:
+            intencion = obtener_intencion(texto, intents, umbral=80)
+            if intencion == "clima":
+                respuesta = "¿Para qué ciudad quieres saber el clima?"
+                tipo = "clima"
+                esperando_ciudad = True
+            else:
+                respuesta, tipo = responder(intencion, texto, intents)
+                if respuesta == "¿Qué artista o canción quieres escuchar?":
+                    esperando_artista = True
         salida_asistente.set(f"🤖 Asistente: {respuesta}")
         hablar(respuesta)
     else:
@@ -23,7 +51,6 @@ def ejecutar_asistente():
         hablar("No entendí lo que dijiste.")
 
 # --- Diseño de interfaz ---
-ventana = tk.Tk()
 ventana.title("IUSH Asistente Virtual IA")
 ventana.geometry("600x400")
 ventana.configure(bg="#1e1e2f")
@@ -36,9 +63,6 @@ titulo.pack(pady=20)
 # Frame para mostrar conversación
 frame_respuestas = tk.Frame(ventana, bg="#2c2f3f", padx=10, pady=10)
 frame_respuestas.pack(padx=20, pady=10, fill="both", expand=True)
-
-entrada_usuario = tk.StringVar()
-salida_asistente = tk.StringVar()
 
 label_usuario = tk.Label(frame_respuestas, textvariable=entrada_usuario, font=("Arial", 12), bg="#2c2f3f", fg="white", anchor="w", justify="left", wraplength=500)
 label_usuario.pack(anchor="w", pady=5)
