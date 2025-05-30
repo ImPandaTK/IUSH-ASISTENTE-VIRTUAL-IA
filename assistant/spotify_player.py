@@ -39,8 +39,6 @@ def reproducir_cancion_por_nombre(nombre):
         cancion = resultados["tracks"]["items"][0]
         nombre_cancion = cancion["name"]
         artista = cancion["artists"][0]["name"]
-        album = cancion["album"]["name"]
-        link = cancion["external_urls"]["spotify"]
         uri = cancion["uri"]
 
         dispositivos = sp.devices()
@@ -53,12 +51,10 @@ def reproducir_cancion_por_nombre(nombre):
         mensaje = (
             f"🎵 Reproduciendo ahora:\n"
             f"{nombre_cancion} - {artista}\n"
-            f"Álbum: {album}\n"
-            f"🔗 {link}"
         )
 
         # ✅ Versión hablada
-        mensaje_hablado = f"Reproduciendo ahora: {nombre_cancion} de {artista}, del álbum {album}"
+        mensaje_hablado = f"Reproduciendo ahora: {nombre_cancion} de {artista} en Spotify."
 
         return mensaje_hablado + "|||SEP|||" + mensaje  # usamos separador para dividir texto vs voz
 
@@ -73,8 +69,6 @@ def reproducir_por_mood_o_genero(texto_usuario):
                 cancion = resultados["tracks"]["items"][0]
                 nombre = cancion["name"]
                 artista = cancion["artists"][0]["name"]
-                album = cancion["album"]["name"]
-                link = cancion["external_urls"]["spotify"]
                 uri = cancion["uri"]
 
                 dispositivos = sp.devices()
@@ -83,7 +77,7 @@ def reproducir_por_mood_o_genero(texto_usuario):
 
                 sp.start_playback(uris=[uri])
 
-                mensaje = f"🎵 Reproduciendo una canción {clave}:\n{nombre} - {artista}\nÁlbum: {album}\n🔗 {link}"
+                mensaje = f"🎵 Reproduciendo una canción {clave}:\n{nombre} - {artista}\n"
                 mensaje_hablado = f"Reproduciendo una canción {clave}: {nombre} de {artista}"
                 return mensaje_hablado + "|||SEP|||" + mensaje
     return None  # no se detectó ningún mood/género
@@ -95,9 +89,7 @@ def obtener_cancion_actual():
         item = playback["item"]
         nombre = item["name"]
         artista = item["artists"][0]["name"]
-        album = item["album"]["name"]
-        link = item["external_urls"]["spotify"]
-        return f"🎧 Ahora suena:\n{nombre} - {artista}\nÁlbum: {album}\n🔗 {link}"
+        return f"🎧 Ahora suena:\n{nombre} - {artista}\n"
     else:
         return "No hay música sonando en este momento."
 

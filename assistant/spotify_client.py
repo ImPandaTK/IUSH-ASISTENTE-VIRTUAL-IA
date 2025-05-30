@@ -26,8 +26,7 @@ def buscar_cancion(nombre_usuario):
             cancion = top_tracks["tracks"][0]
             nombre = cancion["name"]
             album = cancion["album"]["name"]
-            link = cancion["external_urls"]["spotify"]
-            return f"🎵 {nombre} - {nombre_real}\nÁlbum: {album}\nEscúchala aquí: {link}"
+            return f"🎵 {nombre}\n"
 
     # Si no encontró artista, buscar como track general
     resultados = sp.search(q=nombre_usuario, type="track", limit=1)
@@ -36,7 +35,6 @@ def buscar_cancion(nombre_usuario):
         nombre = cancion["name"]
         artista = cancion["artists"][0]["name"]
         album = cancion["album"]["name"]
-        link = cancion["external_urls"]["spotify"]
-        return f"🎵 {nombre} - {artista}\nÁlbum: {album}\nEscúchala aquí: {link}"
+        return f"🎵 {nombre} - {artista}\n"
     
     return "No encontré esa canción ni artista en Spotify."
