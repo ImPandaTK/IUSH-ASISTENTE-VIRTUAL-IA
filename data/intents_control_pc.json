@@ -1,0 +1,120 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenas",
+        "qué más",
+        "hey",
+        "hola asistente",
+        "quiubo"
+      ],
+      "responses": [
+        "¡Hola! ¿En qué puedo ayudarte?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "chao",
+        "nos vemos",
+        "hasta luego",
+        "adiós"
+      ],
+      "responses": [
+        "La buena mi so",
+        "Nos vemos pronto."
+      ]
+    },
+    {
+      "tag": "musica",
+      "patterns": [
+        "pon una canción",
+        "reproduce música",
+        "quiero escuchar reggaetón"
+      ],
+      "responses": [
+        "¿Qué artista o género quieres escuchar?"
+      ]
+    },
+    {
+      "tag": "abrir_programa",
+      "patterns": [
+        "abre word",
+        "abre excel",
+        "abre spotify",
+        "abre el navegador",
+        "abre la calculadora",
+        "abre bloc de notas"
+      ],
+      "responses": [
+        "Abriendo programa..."
+      ]
+    },
+    {
+      "tag": "cerrar_programa",
+      "patterns": [
+        "cierra word",
+        "cierra excel",
+        "cierra spotify",
+        "cierra el navegador",
+        "cierra la calculadora",
+        "cierra bloc de notas"
+      ],
+      "responses": [
+        "Cerrando programa..."
+      ]
+    },
+    {
+      "tag": "escribir_texto",
+      "patterns": [
+        "escribe hola mundo",
+        "escribe mi nombre",
+        "escribe este texto",
+        "escribe algo"
+      ],
+      "responses": [
+        "Escribiendo texto..."
+      ]
+    },
+    {
+      "tag": "abrir_url",
+      "patterns": [
+        "abre google",
+        "abre youtube.com",
+        "abre facebook",
+        "abre twitter",
+        "abre una página web"
+      ],
+      "responses": [
+        "Abriendo sitio web..."
+      ]
+    },
+    {
+      "tag": "ayuda",
+      "patterns": [
+        "necesito ayuda",
+        "ayúdame",
+        "colabórame",
+        "no entiendo qué hacer"
+      ],
+      "responses": [
+        "Estoy aquí para ayudarte. ¿Qué necesitas hacer?"
+      ]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": [
+        "gracias",
+        "mil gracias",
+        "muy amable",
+        "se le agradece"
+      ],
+      "responses": [
+        "Con gusto.",
+        "Siempre pa' servir."
+      ]
+    }
+  ]
+}

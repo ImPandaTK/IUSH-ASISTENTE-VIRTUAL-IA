@@ -74,7 +74,51 @@
             "tag": "cita",
             "patterns": ["dame una cita inspiradora", "recomiéndame una frase", "qué frase me sugieres"],
             "responses": ["La vida es lo que pasa mientras estás ocupado haciendo otros planes. - John Lennon"]
-        }
+        },
+        {
+  "tag": "abrir_programa",
+  "patterns": [
+    "abre word",
+    "abre excel",
+    "abre spotify",
+    "abre el navegador",
+    "abre la calculadora","Abrir","Ejecutar","Iniciar","Lanzar","Abrir aplicación","Abrir programa","Ejecutar programa","Iniciar aplicación","Lanzar programa","Abrir software","Ejecutar software","Iniciar software","Lanzar software"
+  ],
+  "responses": ["Abriendo programa..."]
+},
+{
+  "tag": "cerrar_programa",
+  "patterns": [
+    "cierra word",
+    "cierra excel",
+    "cierra spotify",
+    "cierra el navegador",
+    "cierra la calculadora","detener","parar","cerrar","terminar","finalizar","detener programa","parar aplicación","cerrar software","terminar proceso","finalizar tarea","detener ejecución","parar servicio","cerrar ventana","terminar sesión","cerrar aplicación","finalizar programa","detener software","parar proceso","cerrar tarea","terminar ejecución","finalizar servicio"
+  ],
+  "responses": ["Cerrando programa..."]
+},
+{
+  "tag": "escribir_texto",
+  "patterns": [
+    "escribe hola mundo",
+    "escribe mi nombre",
+    "escribe este texto",
+    "escribe lo que digo"
+  ],
+  "responses": ["Escribiendo texto..."]
+},
+{
+  "tag": "abrir_url",
+  "patterns": [
+    "abre google",
+    "abre youtube.com",
+    "abre facebook",
+    "abre twitter",
+    "abre una página web"
+  ],
+  "responses": ["Abriendo sitio web..."]
+}
+
     ]
   }
   

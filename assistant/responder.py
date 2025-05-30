@@ -4,6 +4,23 @@ from assistant.spotify_player import reproducir_cancion_por_nombre, obtener_canc
 from assistant.entity_extractor import extraer_artista
 import random
 from datetime import datetime
+from modules.pc_control import abrir_programa, cerrar_programa, escribir_texto, abrir_url
+
+# Función auxiliar para detectar nombres de programas en el texto
+def extraer_programa(texto):
+    posibles = ["word", "excel", "spotify", "navegador", "calculadora", "bloc de notas", "explorador", "chrome"]
+    for prog in posibles:
+        if prog in texto.lower():
+            return prog
+    return None
+
+# Función auxiliar para extraer URLs
+def extraer_url(texto):
+    palabras = texto.lower().split()
+    for palabra in palabras:
+        if "." in palabra:  # ej: youtube.com
+            return palabra
+    return "google.com"  # valor por defecto
 
 def responder(intencion, texto, intents):
     if intencion is None:
@@ -33,14 +50,34 @@ def responder(intencion, texto, intents):
         return obtener_cancion_actual(), "cancion_actual"
 
     if intencion == "despedida":
-        return "|||FIN|||La buena mi so", "despedida"
+        return "La buena mi so", "despedida"
 
     for intent in intents["intents"]:
         if intent["tag"] == intencion:
+        # ACCIONES ESPECIALES PRIMERO
+            if intencion == "abrir_programa":
+                nombre = extraer_programa(texto)
+                return abrir_programa(nombre) if nombre else "No entendí qué programa querés abrir.", "pc"
+
+            elif intencion == "cerrar_programa":
+                nombre = extraer_programa(texto)
+                return cerrar_programa(nombre) if nombre else "No entendí qué programa querés cerrar.", "pc"
+
+            elif intencion == "escribir_texto":
+                mensaje = texto.replace("escribe", "").strip()
+                return escribir_texto(mensaje), "pc"
+
+            elif intencion == "abrir_url":
+                url = extraer_url(texto)
+                return abrir_url(url), "pc"
+
+            # RESPUESTA NORMAL
             respuesta = random.choice(intent["responses"])
             if "{hora_actual}" in respuesta:
-                ahora = datetime.now().strftime("%H:%M")
+                ahora = datetime.now().strftime("%I:%M %p")  # Formato de 12 horas con AM/PM
                 respuesta = respuesta.replace("{hora_actual}", ahora)
+
             return respuesta, intencion
+
 
     return consultar_openai(texto), "openai"
