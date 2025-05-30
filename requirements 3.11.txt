@@ -9,7 +9,8 @@ async_timeout
 pyttsx3
 pyaudio
 python-Levenshtein
-whisper
+git+https://github.com/openai/whisper.git
 ffmpeg-python
 sounddevice
 scipy
+torch --index-url https://download.pytorch.org/whl/cpupip install git+https://github.com/openai/whisper.git

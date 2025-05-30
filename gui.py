@@ -10,6 +10,9 @@ from assistant.weather import obtener_clima
 from config.settings import CARGAR_INTENTS
 from dotenv import load_dotenv
 import os
+import whisper
+model = whisper.load_model("base")
+print("Whisper cargado correctamente.")
 
 load_dotenv()
 intents = CARGAR_INTENTS()
