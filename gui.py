@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from assistant.recognizer import escuchar
+#from assistant.recognizer import escuchar
+#from assistant.recognizer_whisper import escuchar_whisper as escuchar
+from assistant.recognizer_whisper_Inteligente import escuchar_whisper_dinamico as escuchar
 from assistant.responder import responder
 from assistant.intent_matcher import obtener_intencion
 from assistant.voice_output import hablar

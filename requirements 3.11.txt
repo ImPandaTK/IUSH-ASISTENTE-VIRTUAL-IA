@@ -9,3 +9,7 @@ async_timeout
 pyttsx3
 pyaudio
 python-Levenshtein
+whisper
+ffmpeg-python
+sounddevice
+scipy
