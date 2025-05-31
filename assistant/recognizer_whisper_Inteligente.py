@@ -14,7 +14,7 @@ def escuchar_whisper_dinamico():
     fs = 16000  # Frecuencia de muestreo
     segundos_max = 10  # Límite de duración
     silencio_rms = 50   # Umbral de silencio
-    duracion_buffer = 0.3  # Segmento de grabación (en segundos)
+    duracion_buffer = 0.2  # Segmento de grabación (en segundos)
     espera_silencio = 1.5  # Cuánto silencio seguido se necesita para cortar
 
     mensaje_bienvenida = ("Estoy escuchando")
